@@ -39,3 +39,6 @@ The Header File Were All Prototypes Are Saved.
 ### _print_func.c
 Pointer To A Function That Selects The Adequate Function To Perform The required Operation.
 
+### _handle_buf.c
+Function That links The Buffer Characters.
+
