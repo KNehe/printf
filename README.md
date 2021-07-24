@@ -24,7 +24,9 @@
 | R  | ROT13 translation of string |
 | S  | String with special chars replaced by their ASCII value  |
 | %  | Character  |
-------------
+
+src - https://www.tutorialspoint.com/c_standard_library/c_function_printf.htm
+
 
 ### _printf.c
 Own Printf Function That Performs Formatted Output Conversion And Print Data.
@@ -32,4 +34,8 @@ Own Printf Function That Performs Formatted Output Conversion And Print Data.
 ### holberton.h
 The Header File Were All Prototypes Are Saved.
 
-------------
+
+
+### _print_func.c
+Pointer To A Function That Selects The Adequate Function To Perform The required Operation.
+
