@@ -42,3 +42,5 @@ Pointer To A Function That Selects The Adequate Function To Perform The required
 ### _handle_buf.c
 Function That links The Buffer Characters.
 
+### _print_buf.c
+Function That Prints The Buffer.
