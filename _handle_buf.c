@@ -4,17 +4,17 @@
  * handle_buf - links the buffer characters
  * @buf: buffer pointer
  * @c: charcter to the link.
- * @inbuf: index of buffer pointer.
+ * @ibuf: index of buffer pointer.
  * Return: index of buffer pointer.
  */
-unsigned int handle_buf(char *buf, char c, unsigned int inbuf)
+unsigned int handle_buf(char *buf, char c, unsigned int ibuf)
 {
-	if (inbuf == 1024)
+	if (ibuf == 1024)
 	{
-		print_buf(buf, inbuf);
-		inbuf = 0;
+		print_buf(buf, ibuf);
+		ibuf = 0;
 	}
-	buf[inbuf] = c;
-	inbuf++;
-	return (inbuf);
+	buf[ibuf] = c;
+	ibuf++;
+	return (ibuf);
 }
