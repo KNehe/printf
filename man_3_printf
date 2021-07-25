@@ -1,0 +1,64 @@
+.\" Manpage for _printf.
+.TH _PRINTF 3 "2021-25-07" GNU "_printf user manual"
+
+.SH NAME
+.B _printf
+- A mini version of C's printf function
+.SH SYNOPSIS
+To use this function ensure to add #include "holberton.h"
+.br
+.B int _printf(const char *format, ...)
+.SH DESCRIPTION
+Prints the result to stdout along with the arguments according to the format given.
+.SH USAGE
+The following are specifiers you can use to control the output.
+.br
+.B %c:
+- Used to print a character
+.br
+.B %d or %i:
+- Used to print a signed decimal integer
+.br
+.B %s:
+- Used to print a string of characters
+.br
+.B %o:
+- Used to print an octal
+.br
+.B %b:
+- Used to print a signed binary
+.br
+.B %u:
+- Used to print unsigned integer
+.br
+.B %x:
+- Used to print unsigned hexadecimal
+.br
+.B %X:
+- Used to print unsigned hexadecimal(uppercase)
+.br
+.B %p:
+- Used to print a pointer address
+.br
+.B %r:
+- Used to reverse a string of characters
+.br
+.B %S:
+- Used to print special chars replaced by their ASCII value
+.br
+.B %%:
+- Used to print a %
+.SH EXAMPLE
+int a = _printf("Example %d", 1)
+.br
+_printf("Print %d characters", a)
+.SH RETURN VALUES
+The _printf() function returns an integer representing the number of characters/symbols printed not including '\\0' for strings
+.SH BUGS
+No known bugs
+.SH AUTHOR
+Leslie Shumba
+.br
+Nehemiah Kamolu
+.SH SEE ALSO
+man printf
