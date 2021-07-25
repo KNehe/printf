@@ -44,3 +44,6 @@ Function That links The Buffer Characters.
 
 ### _print_buf.c
 Function That Prints The Buffer.
+
+### man_3_printf
+GNU user manual for the _printf function
