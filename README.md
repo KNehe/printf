@@ -47,3 +47,6 @@ Function That Prints The Buffer.
 
 ### man_3_printf
 GNU user manual for the _printf function
+
+### ev_print_func.c
+Function That Returns The Number Of Indetifiers
