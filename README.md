@@ -31,7 +31,7 @@ To compile you need a main program, as you wish ... for example:
 ~~~
 int main(void)
 {
-       _printf("%s%c%dton", "Holbe", "R", 0);
+       _printf("%s%cto%dn", "Holbe", "R", 0);
        return(0);
 }
 ~~~
