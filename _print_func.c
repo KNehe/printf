@@ -1,58 +1,58 @@
 #include "holberton.h"
-/**
- * _print_func - selects the adequate function to perform.
- * @s: This is the identifier indentifier
- * @index: index for the  indentifier
- * Return: pointer to a function **().
- */
-int (*_print_func(const char *s, int index))(va_list, char *, unsigned int)
-{
-	print_t pr[] = {
-		{"c", print_chr}, {"s", print_str},
-		{"hd", prinhint}, {"hu", prinhunt},
-		{"ho", prinhoct}, {"hx", prinhhex},
-		{"hX", prinhupx}, {"#o", prinnoct},
-		{"#x", prinnhex}, {"#X", prinnupx},
-		{"i", print_int}, {"d", print_int},
-		{"b", print_bnr}, {"u", print_unt},
-		{"#u", print_unt}, {"+i", prinpint},
-		{"+d", prinpint}, {"+u", print_unt},
-		{"+o", print_oct}, {"+x", print_hex},
-		{"+X", print_upx}, {" i", prinsint},
-		{" d", prinsint}, {" u", print_unt},
-		{" o", print_oct}, {" x", print_hex},
-		{" X", print_upx}, {"R", print_rot},
-		{"r", print_rev},  {"%", print_prg},
-		{"l", print_prg}, {"h", print_prg},
-		{"o", print_oct}, {"x", print_hex},
-		{"X", print_upx}, {"S", print_usr},
-		{"p", print_add}, {"li", prinlint},
-		{"ld", prinlint}, {"lu", prinlunt},
-		{"lo", prinloct}, {"lx", prinlhex},
-		{"lX", prinlupx}, {"hi", prinhint},
-		{"#i", print_int}, {"#d", print_int},
-		{" +i", prinpint}, {" +d", prinpint},
-		{"+ i", prinpint}, {"+ d", prinpint},
-		{" %", print_prg}, {NULL, NULL},
-	};
-	int i = 0, j = 0, first_index;
 
-	first_index = index;
-	while (pr[i].type_arg)
+/**
+ * selector - main function.
+ * @format: The dimension of the parameters passed.
+ * @...: The parameters to print.
+ * @i: The pointer of the format position.
+ * @arguments: The variable to print.
+ *
+ * Description: This function selects the correct function
+ * asked by the user for calls it.
+ *
+ * Return: The total number of characters of the functions called.
+ */
+
+int print_func(int *i, const char *format, va_list arguments)
+{
+	int count = 0;
+	int k = *i, l = 0;
+
+	print_t ops[] = {
+		{"c", oper_char},
+		{"s", oper_string},
+		{"%", oper_percent},
+		{"d", oper_numbers},
+		{"i", oper_numbers},
+		{"u", oper_unsigned},
+		{"o", oper_octal},
+		{"b", oper_binary},
+		{"r", print_rev},
+		{"R", rot13},
+		{NULL, NULL}
+	};
+
+	int c = 0;
+
+	while (c < 10)
 	{
-		if (s[index] == pr[i].type_arg[j])
+		if (*(ops[c].oper) == format[k + 1])
 		{
-			if (pr[i].type_arg[j + 1] != '\0')
-				index++, j++;
-			else
-				break;
+			count += oper[c].f(x);
+			*i += 1;
 		}
 		else
 		{
-			j = 0;
-			i++;
-			index = first_index;
+			l++;
 		}
+		c++;
 	}
-	return (pr[i].f);
+
+	if (l == 10)
+	{
+		_putchar(format[k]);
+		count++;
+	}
+
+	return (count);
 }

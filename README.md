@@ -27,26 +27,34 @@
 
 src - https://www.tutorialspoint.com/c_standard_library/c_function_printf.htm
 
+To compile you need a main program, as you wish ... for example:
+~~~
+int main(void)
+{
+       _printf("%s%c%dton", "Holbe", "R", 0);
+       return(0);
+}
+~~~
+And execute the following in your terminal:
+~~~
+$ gcc -Wall -Werror -Wextra -pedantic -Wno-format *.c -o a
+$ ./a
+"HolbeRt0n"
+$
+~~~
+
 
 ### _printf.c
 Own Printf Function That Performs Formatted Output Conversion And Print Data.
+~~~
 
 ### holberton.h
 The Header File Were All Prototypes Are Saved.
-
-
-
+~~~
 ### print_func.c
 Pointer To A Function That Selects The Adequate Function To Perform The required Operation.
-
-### _handle_buf.c
-Function That links The Buffer Characters.
-
-### print_buf.c
-Function That Prints The Buffer.
-
+~~~
 ### man_3_printf
 GNU user manual for the _printf function
+~~~
 
-### ev_print_func.c
-Function That Returns The Number Of Indetifiers
