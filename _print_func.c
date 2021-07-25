@@ -29,16 +29,17 @@ int print_func(int *i, const char *format, va_list arguments)
 		{"b", oper_binary},
 		{"r", print_rev},
 		{"R", rot13},
+		{"x", print_hex},
 		{NULL, NULL}
 	};
 
 	int c = 0;
 
-	while (c < 10)
+	while (c < 11)
 	{
 		if (*(ops[c].oper) == format[k + 1])
 		{
-			count += oper[c].f(arguments);
+			count += ops[c].f(arguments);
 			*i += 1;
 		}
 		else
@@ -48,7 +49,7 @@ int print_func(int *i, const char *format, va_list arguments)
 		c++;
 	}
 
-	if (l == 10)
+	if (l == 11)
 	{
 		_putchar(format[k]);
 		count++;

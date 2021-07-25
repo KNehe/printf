@@ -54,12 +54,64 @@ The Header File Were All Prototypes Are Saved.
 ### print_func.c
 Pointer To A Function That Selects The Adequate Function To Perform The required Operation.
 ~~~
+~~~
 
 ### man_3_printf
 
 GNU user manual for the _printf function
 ~~~
+~~~
 
-## _putchar.c
+### _putchar.c
 Contains the _putchar function, used to print.
+~~~
+~~~
+
+### print_chr.c
+/* identifier "%c" */
+Function That Writes The Character C To Stdout
+~~~
+~~~
+
+### print_str.c
+/* identifier "%s" */
+Function That Writes The String To Stdout
+~~~
+~~~
+
+### print_int.c
+/* idetifier "%d" or "%i" */
+Function That Prints An Integer
+~~~
+~~~
+
+### print_bnr.c
+/* identifier "%b" */
+Function That Prints Decimal In Binary.
+~~~
+~~~
+
+### print_oct.c
+/*indentifier "%o" */
+Function That Prints Decimal In Octal.
+~~~
+~~~
+
+
+### print_rot.c
+/* identifier "%R" */
+Function That Writes The String To Stdout In Rot13.
+~~~
+~~~
+
+### print_rev.c
+/* identifier "%r" */
+Function That Writes The String To Stdout In Reverse.
+~~~
+~~~
+
+### arg.c
+/* identifier "%u" */
+This function prints a unsigned int.
+~~~
 ~~~
