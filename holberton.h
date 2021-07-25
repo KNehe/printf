@@ -27,6 +27,9 @@ typedef struct print
 int _printf(const char *format, ...);
 int print_func(int *i, const char *format, va_list arguments);
 
+/* Putchar */
+int _putchar(char c);
+
 
 
 #endif

@@ -38,7 +38,7 @@ int print_func(int *i, const char *format, va_list arguments)
 	{
 		if (*(ops[c].oper) == format[k + 1])
 		{
-			count += oper[c].f(x);
+			count += oper[c].f(arguments);
 			*i += 1;
 		}
 		else

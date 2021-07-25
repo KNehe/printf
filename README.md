@@ -54,7 +54,12 @@ The Header File Were All Prototypes Are Saved.
 ### print_func.c
 Pointer To A Function That Selects The Adequate Function To Perform The required Operation.
 ~~~
+
 ### man_3_printf
+
 GNU user manual for the _printf function
 ~~~
 
+## _putchar.c
+Contains the _putchar function, used to print.
+~~~
