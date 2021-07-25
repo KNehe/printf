@@ -6,6 +6,7 @@
 #include <stdlib.h>
 
 /**
+ *struct print - structure for different types of cases
  * struct print - is the struct for printer functions
  * @f: is the pointer to a printer functions
  * @type_arg: is the identifier
