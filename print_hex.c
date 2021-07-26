@@ -2,7 +2,7 @@
 
 /**
   * print_hex_lower - prints lower case hexadecimal
-  * arg: va_list parameter
+  * @arg: va_list parameter
   * Return: Number of printed characters
   */
 int print_hex_lower(va_list arg)
@@ -21,7 +21,7 @@ int print_hex_lower(va_list arg)
 
 /**
   * print_hex_upper - prints upper case hexadecimal
-  * arg: va_list parameter
+  * @arg: va_list parameter
   * Return: Number of printed characters
   */
 int print_hex_upper(va_list arg)
