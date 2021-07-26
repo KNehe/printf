@@ -27,14 +27,14 @@ int print_func(int *i, const char *format, va_list arguments)
 		{"u", oper_unsigned},
 		{"o", oper_octal},
 		{"b", oper_binary},
-		{"r", print_rev},
-		{"R", rot13}, {"x", print_hex_lower}, {"X", print_hex_upper},
+		{"r", print_rev}, {"R", rot13},
+		{"x", print_hex_lower}, {"X", print_hex_upper},
 		{NULL, NULL}
 	};
 
 	int c = 0;
 
-	while (c < 10)
+	while (c < 12)
 	{
 		if (*(ops[c].oper) == format[k + 1])
 		{
