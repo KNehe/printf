@@ -115,3 +115,14 @@ Function That Writes The String To Stdout In Reverse.
 This function prints a unsigned int.
 ~~~
 ~~~
+
+### print_hex.c
+/* identifier "%x" or "%X" */
+Has functions that print unsigned hexadecimal in lower and upper case
+~~~
+~~~
+
+### helpers.c
+Has various utility functions
+~~~
+~~~
