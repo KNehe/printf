@@ -8,6 +8,7 @@
  *
  * Return: The string length.
  */
+
 int oper_string(va_list y)
 {
 	int i = 0;

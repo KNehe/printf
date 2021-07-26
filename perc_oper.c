@@ -8,6 +8,7 @@
  *
  * Return: 1.
  */
+
 int oper_percent(va_list __attribute__((unused)) y)
 {
 	_putchar('%');

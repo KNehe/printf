@@ -8,6 +8,7 @@
  *
  * Return: 1.
  */
+
 int oper_char(va_list y)
 {
 	int container = (char)va_arg(y, int);
