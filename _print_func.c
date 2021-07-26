@@ -48,7 +48,7 @@ int print_func(int *i, const char *format, va_list arguments)
 		c++;
 	}
 
-	if (l == 10)
+	if (l == 12)
 	{
 		_putchar(format[k]);
 		count++;
