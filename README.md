@@ -126,7 +126,22 @@ Has functions that print unsigned hexadecimal in lower and upper case
 Has various utility functions
 ~~~
 ~~~
-### main.c
+### test/main.c
 Is the test file
+~~~
+~~~
+
+### handl_buf.c
+Concatenates buffer characters
+~~~
+~~~
+
+### prints_buf
+Prints a buffer
+~~~
+~~~
+
+### print_S.c
+Prints a string. Non printable characters (0 < ASCII value < 32 or >= 127) are printed this way: ```\x,``` followed by the ASCII code value in hexadecimal (upper case - always 2 characters)
 ~~~
 ~~~
