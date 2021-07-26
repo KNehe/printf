@@ -34,7 +34,7 @@ void _puts(char *s)
 
 /**
   * convert_num_to_base - Convert numbers from one base to another
-  * range: Range of characters e.g "012345678ABCDEF"
+  * @range: Range of characters e.g "012345678ABCDEF"
   * @num: Number to change
   * @base: Base to convert num to
   * Return: Num into a char pointer
@@ -52,6 +52,6 @@ int convert_num_to_base(char range[], unsigned int num, int base)
 		mod = num % base;
 		*--ptr = representation[mod];
 		num /= base;
-	}while (num != 0);
+	} while (num != 0);
 	return (ptr);
 }
