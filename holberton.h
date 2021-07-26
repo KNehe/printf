@@ -54,6 +54,5 @@ char *convert_num_to_base(char range[], unsigned int num, int base);
 int print_S(va_list list);
 unsigned int handl_buf(char *buf, char c, unsigned int ibuf);
 int print_buf(char *buf, unsigned int nbuf);
-int print_add(va_list arguments, char *buf, unsigned int ibuf);
 
 #endif
