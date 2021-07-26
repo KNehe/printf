@@ -51,6 +51,6 @@ int _strlen(char *s);
 /* print string without va_list */
 void _puts(char *s);
 char *convert_num_to_base(char range[], unsigned int num, int base);
-
+int print_S(va_list list);
 
 #endif
