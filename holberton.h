@@ -51,6 +51,8 @@ int _strlen(char *s);
 /* print string without va_list */
 void _puts(char *s);
 char *convert_num_to_base(char range[], unsigned int num, int base);
+unsigned int handl_buf(char *buf, char c, unsigned int ibuf);
+int print_buf(char *buf, unsigned int nbuf);
 
 
 #endif
