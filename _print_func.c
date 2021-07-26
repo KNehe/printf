@@ -25,7 +25,7 @@ int print_func(int *i, const char *format, va_list arguments)
 		{"d", oper_numbers},
 		{"i", oper_numbers},
 		{"u", oper_unsigned},
-		{"o", oper_octal},
+		{"o", oper_octal},{"p", print_add},
 		{"b", oper_binary}, {"S", print_S},
 		{"r", print_rev}, {"R", rot13},
 		{"x", print_hex_lower}, {"X", print_hex_upper},
@@ -34,7 +34,7 @@ int print_func(int *i, const char *format, va_list arguments)
 
 	int c = 0;
 
-	while (c < 13)
+	while (c < 14)
 	{
 		if (*(ops[c].oper) == format[k + 1])
 		{
@@ -48,7 +48,7 @@ int print_func(int *i, const char *format, va_list arguments)
 		c++;
 	}
 
-	if (l == 13)
+	if (l == 14)
 	{
 		_putchar(format[k]);
 		count++;
