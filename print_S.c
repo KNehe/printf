@@ -11,6 +11,9 @@ int print_S(va_list list)
 	char *str = va_arg(list, char *);
 	char c;
 
+	if (str == NULL || *str == '\0')
+		return (0);
+
 	while (str[i])
 	{
 		c = str[i];
