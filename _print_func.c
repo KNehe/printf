@@ -36,7 +36,7 @@ int print_func(int *i, const char *format, va_list arguments)
 
 	int c = 0;
 
-	while (c < 10)
+	while (c < 13)
 	{
 		if (*(ops[c].oper) == format[k + 1])
 		{
@@ -50,7 +50,7 @@ int print_func(int *i, const char *format, va_list arguments)
 		c++;
 	}
 
-	if (l == 10)
+	if (l == 13)
 	{
 		_putchar(format[k]);
 		count++;
