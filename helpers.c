@@ -39,7 +39,7 @@ void _puts(char *s)
   * @base: Base to convert num to
   * Return: Num into a char pointer
   */
-int convert_num_to_base(char range[], unsigned int num, int base)
+char *convert_num_to_base(char range[], unsigned int num, int base)
 {
 	char *ptr;
 	static char buffer[128];
@@ -50,8 +50,8 @@ int convert_num_to_base(char range[], unsigned int num, int base)
 
 	do {
 		mod = num % base;
-		*--ptr = representation[mod];
+		*--ptr = range[mod];
 		num /= base;
 	} while (num != 0);
-	return (ptr);
+	return (pt);
 }
