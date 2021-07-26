@@ -26,9 +26,9 @@ void _puts(char *s)
 {
 	int i;
 
-	for (i = 0; i < _strlen(str); i++)
+	for (i = 0; i < _strlen(s); i++)
 	{
-		_putchar(str[i]);
+		_putchar(s[i]);
 	}
 }
 
@@ -53,5 +53,5 @@ char *convert_num_to_base(char range[], unsigned int num, int base)
 		*--ptr = range[mod];
 		num /= base;
 	} while (num != 0);
-	return (pt);
+	return (ptr);
 }
