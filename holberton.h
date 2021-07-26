@@ -44,8 +44,12 @@ int oper_binary(va_list y);
 int oper_octal(va_list y);
 int rot13(va_list y);
 int print_rev(va_list y);
-
-
+int print_hex_lower(va_list arg);
+int print_hex_upper(va_list arg);
+int _strlen(char *s);
+/* print string without va_list */
+void _puts(char *s);
+char *convert_num_to_base(char range[], unsigned int num, int base);
 
 
 #endif

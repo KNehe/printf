@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * selector - main function.
+ * print_func - main function.
  * @format: The dimension of the parameters passed.
  * @...: The parameters to print.
  * @i: The pointer of the format position.
@@ -28,7 +28,7 @@ int print_func(int *i, const char *format, va_list arguments)
 		{"o", oper_octal},
 		{"b", oper_binary},
 		{"r", print_rev},
-		{"R", rot13},
+		{"R", rot13}, {"x", print_hex_lower}, {"X", print_hex_upper},
 		{NULL, NULL}
 	};
 
