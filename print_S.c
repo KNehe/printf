@@ -19,7 +19,7 @@ int print_S(va_list list)
 			count += _putchar('\\');
 			count += _putchar('x');
 			count += _putchar('0');
-			count += printf("%X", (unsigned int) c);
+			count += _printf("%X", (unsigned int) c);
 		}
 		else
 		{
