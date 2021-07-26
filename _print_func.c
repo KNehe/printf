@@ -24,6 +24,8 @@ int print_func(int *i, const char *format, va_list arguments)
 		{"%", oper_percent},
 		{"d", oper_numbers},
 		{"i", oper_numbers},
+		{"#i", oper_numbers},
+		{"#d", oper_numbers},
 		{"u", oper_unsigned},
 		{"o", oper_octal},
 		{"b", oper_binary},
