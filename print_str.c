@@ -11,20 +11,14 @@
 
 int oper_string(va_list y)
 {
-	int i = 0;
-	char *s;
+	char *str;
+	int i;
 
-	s = va_arg(y, char*);
+	str = (va_arg(y, char*));
+	if (str == NULL)
+		str = "(null)";
+	for (i = 0; str[i]; i++)
+		_putchar(str[i]);
 
-	if (s == NULL)
-	{
-		s = "(null)";
-	}
-
-	while (s[i] != '\0')
-	{
-		_putchar(s[i]);
-		i++;
-	}
 	return (i);
 }

@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * ope_char - main function
+ * oper_char - main function
  * @y: The argument pointer.
  *
  * Description: This function prints a char.
@@ -11,9 +11,6 @@
 
 int oper_char(va_list y)
 {
-	int container = (char)va_arg(y, int);
-
-	_putchar(container);
-
+	_putchar(va_arg(y, int));
 	return (1);
 }
