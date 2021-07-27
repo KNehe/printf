@@ -31,7 +31,7 @@ To compile you need a main program, as you wish ... for example:
 ~~~
 int main(void)
 {
-       _printf("%s%cto%dn", "Holbe", "R", 0);
+       _printf("%s%ct%dn", "Holbe", "R", 0);
        return(0);
 }
 ~~~
@@ -47,10 +47,12 @@ $
 ### _printf.c
 Own Printf Function That Performs Formatted Output Conversion And Print Data.
 ~~~
-
+~~~
 ### holberton.h
 The Header File Were All Prototypes Are Saved.
 ~~~
+~~~
+
 ### print_func.c
 Pointer To A Function That Selects The Adequate Function To Perform The required Operation.
 ~~~
@@ -145,3 +147,19 @@ Prints a buffer
 Prints a string. Non printable characters (0 < ASCII value < 32 or >= 127) are printed this way: ```\x,``` followed by the ASCII code value in hexadecimal (upper case - always 2 characters)
 ~~~
 ~~~
+
+Enviroment:
+Ubuntu 14.04.6. LTS vagrant-ubuntu-trusty-64
+
+------------
+
+This Project Was Done By Nehemiah Kamolu
+https://github.com/KNehe
+
+------------
+And Leslie D. Shumba
+https://github.com/layan2k
+
+------------
+
+### End
